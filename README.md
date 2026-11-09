@@ -4,7 +4,7 @@
 
 **Free, no account, works offline, no ads. Unlimited causes, entries and exports (CSV, Excel, PDF).**
 
-Website and privacy policy: https://argtime.github.io/hourlark/
+Website and privacy policy: https://rshamilton.github.io/hourlark/
 
 ## Feature checklist
 
@@ -45,7 +45,7 @@ Website and privacy policy: https://argtime.github.io/hourlark/
 
 ## Open source
 
-Hourlark is released under the GPL-3.0. Read the code, build it yourself, or send a pull request. Issues: https://github.com/argtime/hourlark/issues
+Hourlark is released under the GPL-3.0. Read the code, build it yourself, or send a pull request. Issues: https://github.com/rshamilton/hourlark/issues
 
 ## Highlights
 
