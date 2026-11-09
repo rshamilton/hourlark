@@ -10,6 +10,11 @@ struct SettingsView: View {
     @State private var confirmErase = false
     @State private var showGuide = false
 
+    // These open in Safari only when you tap them. The app itself never goes online.
+    private static let supportURL = URL(string: "https://rshamilton.github.io/hourlark/support.html")!
+    private static let privacyURL = URL(string: "https://rshamilton.github.io/hourlark/privacy.html")!
+    private static let sourceURL = URL(string: "https://github.com/rshamilton/hourlark")!
+
     private var version: String {
         let v = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "?"
         let b = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String ?? "?"
@@ -70,6 +75,15 @@ struct SettingsView: View {
                 Section("About") {
                     LabeledContent("Version", value: version)
                     LabeledContent("License", value: "GPL-3.0 (free, open source)")
+                    Link(destination: Self.supportURL) {
+                        Label("Support", systemImage: "lifepreserver")
+                    }
+                    Link(destination: Self.privacyURL) {
+                        Label("Privacy policy", systemImage: "hand.raised")
+                    }
+                    Link(destination: Self.sourceURL) {
+                        Label("Source code on GitHub", systemImage: "chevron.left.forwardslash.chevron.right")
+                    }
                 }
 
                 Section {

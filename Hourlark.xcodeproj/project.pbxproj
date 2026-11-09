@@ -24,6 +24,7 @@
 		5DFCECFDE719B7CA222870ED /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF9494855735D6EB515F86 /* TimeEntry.swift */; };
 		5FE4440AA3C0A062B4B440D8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B909B3399821DF3E1677F1DB /* Components.swift */; };
 		6255E832926E349C43A98A11 /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1C47D59E114B5AEA4408A /* CSVExporter.swift */; };
+		66DEAF7BAF4DC17D631BA7F3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 2146FEF204D03A48B3B1244F /* PrivacyInfo.xcprivacy */; };
 		6D653BB5A44280797D3174EA /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F2FB833893C925E6981D5 /* SharedStore.swift */; };
 		6FBF4AAD4603E1B5A60A473C /* HourlarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965E8065CA40CB32F99678C5 /* HourlarkTests.swift */; };
 		7108C0305B5762757D4B426B /* ExportSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC98A7E51EF7D20C41EF56 /* ExportSupport.swift */; };
@@ -89,6 +90,7 @@
 		0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HourlarkWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1372F4AC7910A9F91AE50C19 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		189A9B584B16ABFA5040CA64 /* XLSXWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLSXWriter.swift; sourceTree = "<group>"; };
+		2146FEF204D03A48B3B1244F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		21900409DC54A9376A5CF6F8 /* Fmt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fmt.swift; sourceTree = "<group>"; };
 		377A26487F8E2E88D2138688 /* BackupSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSettingsView.swift; sourceTree = "<group>"; };
 		43671B16ED5C7D5F92CE5480 /* WidgetSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSync.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				654FCCD6BE6AD50383B2A380 /* HourlarkWidgets.entitlements */,
 				A647EDEE72D19462A629CDDE /* HourlarkWidgetsBundle.swift */,
 				70AE460B360C6425664DE0D7 /* Info.plist */,
+				2146FEF204D03A48B3B1244F /* PrivacyInfo.xcprivacy */,
 				CBE790E8D45E621354766806 /* TimerLiveActivity.swift */,
 				6E6C7FD7AE9CE82F2DDF172F /* TimerWidget.swift */,
 			);
@@ -295,6 +298,7 @@
 			buildConfigurationList = 79661F784D2055286810CDAE /* Build configuration list for PBXNativeTarget "HourlarkWidgets" */;
 			buildPhases = (
 				F8AA405192184193BDCD7EAF /* Sources */,
+				28D2A3F87ADC75D786610F50 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -369,6 +373,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		28D2A3F87ADC75D786610F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DEAF7BAF4DC17D631BA7F3 /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		72D8AFCC5DE496F549E5C222 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,7 +507,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -514,7 +526,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -578,7 +590,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -591,7 +603,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				MARKETING_VERSION = 0.3.0;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
