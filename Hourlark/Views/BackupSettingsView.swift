@@ -54,7 +54,7 @@ struct BackupSettingsView: View {
             } header: {
                 Text("Your private iCloud Drive")
             } footer: {
-                Text("Optional. Copies go to your own iCloud account. Only you can see them.")
+                Text("On by default. Copies go to your own iCloud account. Only you can see them. Turn it off any time.")
             }
 
             Section {

@@ -152,8 +152,8 @@ struct OnboardingView: View {
                     Text("Time, signed & sealed.").font(.title3).foregroundStyle(.secondary)
                 }
                 VStack(alignment: .leading, spacing: 20) {
-                    feature("lock.shield.fill", .green, "Nothing is shared. Ever.",
-                            "Your hours stay on this iPhone. There's no account and no server, so there's nowhere for your data to go. If you want a backup, it goes to your own private iCloud Drive.")
+                    feature("lock.shield.fill", .green, "Private by design",
+                            "No account, no ads and no Hourlark servers. Your hours are stored on this iPhone and backed up automatically to your own private iCloud Drive. You can turn that off in Settings.")
                     feature("timer", .blue, "Track anything",
                             "Volunteering, work, school, a side project. Make a cause for each.")
                     feature("signature", .orange, "Signatures are optional",
@@ -315,9 +315,9 @@ struct OnboardingView: View {
                 title("You're all set", "Here's what to know before you start.")
                 VStack(alignment: .leading, spacing: 20) {
                     feature("lock.shield.fill", .green, "Private",
-                            "Everything stays on this iPhone. Nothing is sent to anyone, and Hourlark has no account or servers.")
-                    feature("folder.fill", .blue, "Backed up in Files",
-                            "Copies of your hours are saved in the Files app, and in your own iCloud Drive if you turn that on in Settings.")
+                            "Hourlark has no account, no ads and no servers, and never shares your data with anyone. Your own iCloud account holds your backup.")
+                    feature("folder.fill", .blue, "Backed up automatically",
+                            "Copies of your hours are saved in the Files app and in your own iCloud Drive. Turn the iCloud copy off any time in Settings, Backup & Files.")
                     feature("doc.richtext", .orange, "Reports for anyone",
                             "PDFs and spreadsheets work for every cause. Signatures are an extra, only when you need them.")
                 }

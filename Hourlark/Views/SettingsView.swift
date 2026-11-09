@@ -10,7 +10,7 @@ struct SettingsView: View {
     @State private var confirmErase = false
     @State private var showGuide = false
 
-    // These open in Safari only when you tap them. The app itself never goes online.
+    // These open in Safari only when you tap them.
     private static let supportURL = URL(string: "https://rshamilton.github.io/hourlark/support.html")!
     private static let privacyURL = URL(string: "https://rshamilton.github.io/hourlark/privacy.html")!
     private static let sourceURL = URL(string: "https://github.com/rshamilton/hourlark")!
@@ -63,13 +63,13 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Label("Stored only on this iPhone", systemImage: "iphone")
-                    Label("Optional backup to your own private iCloud Drive", systemImage: "icloud")
-                    Label("No account, servers, analytics or ads", systemImage: "lock.shield")
+                    Label("Stored on this iPhone", systemImage: "iphone")
+                    Label("Automatic backup to your own private iCloud Drive", systemImage: "icloud")
+                    Label("No account, Hourlark servers, analytics or ads", systemImage: "lock.shield")
                 } header: {
                     Text("Your data")
                 } footer: {
-                    Text("Nothing is shared with anyone, ever. Hourlark has no servers to send it to.")
+                    Text("Hourlark never shares your data. It has no servers; your iCloud Drive copy belongs to you and you can turn it off in Backup & Files.")
                 }
 
                 Section("About") {

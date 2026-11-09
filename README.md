@@ -12,7 +12,7 @@ Website: https://rshamilton.github.io/hourlark/ · Support: https://rshamilton.g
 |---|---|
 | Free? | Yes. No in-app purchases, subscriptions or trials. Nothing is capped or locked. |
 | Account required? | No. |
-| Works offline? | Yes. The app has no networking code. |
+| Works offline? | Yes. Everything works without internet. The app has no networking code of its own; iCloud Drive backup copies are uploaded by iOS. |
 | Ads or analytics? | None. No third-party code. |
 | Start/stop timer? | Yes, plus manual entry. |
 | Limit on projects (causes), clients or entries? | No limit. |
@@ -30,9 +30,9 @@ Website: https://rshamilton.github.io/hourlark/ · Support: https://rshamilton.g
 
 **Is there a limit on projects?** No limit on causes, entries or exports.
 
-**Does it work offline?** Yes, always. It never goes online.
+**Does it work offline?** Yes. Tracking, reports and exports need no connection. Backup copies in your iCloud Drive are uploaded by iOS whenever you're online.
 
-**Where is my data?** On your iPhone, plus backup files in the Files app. If you choose an iCloud Drive folder, iOS syncs those files; Hourlark itself sends nothing.
+**Where is my data?** On your iPhone, plus backup files in the Files app and, by default, in your own private iCloud Drive. You can turn the iCloud copy off in Settings, Backup & Files. Hourlark has no servers and sends nothing to anyone; iOS handles the iCloud upload.
 
 **Can it invoice clients?** No. See below.
 
@@ -49,15 +49,15 @@ Hourlark is released under the GPL-3.0. Read the code, build it yourself, or sen
 
 ## Highlights
 
-- **Private by design.** Your data is stored on the iPhone, or in your own private iCloud Drive if you turn that on. No account, no servers, no analytics, no ads, and Hourlark never sends your data to anyone.
+- **Private by design.** Your data is stored on the iPhone and backed up by default to your own private iCloud Drive (you can turn that off). No account, no Hourlark servers, no analytics, no ads, and Hourlark never shares your data with anyone.
 - **Free forever.** No in-app purchases or subscriptions.
 - **Track anything.** Organize time by cause (a charity, a job, a class, a project) with optional hour goals.
 - **Signed-off hours.** Create a verification sheet PDF, print it, get it signed, then scan or photograph it back into the app. Entries on a signed sheet are locked.
 - **Reports.** Export a PDF report (with signed/unsigned status per entry and the signed proof attached at the back), an Excel workbook (.xlsx), or a CSV.
-- **Your logs live in Files.** Every change is mirrored to ordinary files (full JSON backup including proof photos, a CSV of your hours, 14 daily snapshots) under *On My iPhone → Hourlark → Backups*. Optionally pick a folder in iCloud Drive (or anywhere in Files) and Hourlark mirrors the same files there. The app never goes online; iOS does the syncing.
+- **Your logs live in Files.** Every change is mirrored to ordinary files (full JSON backup including proof photos, a CSV of your hours, 14 daily snapshots) under *On My iPhone → Hourlark → Backups*. The same files are also saved to your own iCloud Drive by default (turn it off in Settings), or to any other folder you pick in Files. iOS does the syncing; the app has no networking code.
 - **Restore.** Merge a backup into your data or replace everything, from Settings or from the welcome screen on a fresh install.
 - **Widgets and lock screen.** A home-screen widget (small and medium) and lock-screen widgets show today's hours and let you start or stop the timer. A Live Activity with a Stop button shows the running timer on the lock screen and Dynamic Island. Siri and Shortcuts can start and stop it too.
-- **iCloud Drive.** Optionally mirror backups into Hourlark's own iCloud Drive folder.
+- **iCloud Drive.** Backups are mirrored into Hourlark's own iCloud Drive folder by default. Turn it off in Settings, Backup & Files.
 - **Reminders.** Optional daily "log your hours" nudges and a "timer running long" alert, all scheduled locally.
 - **Per-cause sign-off.** Each cause is either verified by a supervisor or just tracked for yourself.
 

@@ -76,7 +76,8 @@ final class BackupManager {
     init(container: ModelContainer) {
         self.container = container
         autoBackupEnabled = defaults.object(forKey: Keys.auto) as? Bool ?? true
-        iCloudEnabled = defaults.bool(forKey: Keys.icloud)
+        // On by default: backups also go to the user's own iCloud Drive (they can turn it off).
+        iCloudEnabled = defaults.object(forKey: Keys.icloud) as? Bool ?? true
         let t = defaults.double(forKey: Keys.last)
         lastBackup = t > 0 ? Date(timeIntervalSince1970: t) : nil
         customFolderName = BackupWriter.resolveBookmark(defaults.data(forKey: Keys.bookmark))?.lastPathComponent
@@ -136,6 +137,7 @@ final class BackupManager {
             let bookmark = defaults.data(forKey: Keys.bookmark)
             let local = Self.localFolder
             let useICloud = iCloudEnabled
+            let signedInToICloud = iCloudAvailable
 
             let outcome = await Task.detached(priority: .utility) { () -> (local: String?, custom: String?) in
                 let json: Data
@@ -149,9 +151,10 @@ final class BackupManager {
                     if let folder = BackupManager.iCloudFolder() {
                         do { try BackupWriter.writeScoped(json: json, csv: csv, to: folder) }
                         catch { customError = "Couldn't save to iCloud Drive: \(error.localizedDescription)" }
-                    } else {
-                        customError = "iCloud Drive isn't available. Sign in to iCloud and turn on iCloud Drive in iOS Settings."
+                    } else if signedInToICloud {
+                        customError = "iCloud Drive isn't available right now. Check iCloud Drive in iOS Settings."
                     }
+                    // Not signed in to iCloud: skip quietly. Backups still go to Files on this iPhone.
                 }
                 if let folder = BackupWriter.resolveBookmark(bookmark) {
                     do { try BackupWriter.writeScoped(json: json, csv: csv, to: folder) }
