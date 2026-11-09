@@ -1,0 +1,11 @@
+build/
+DerivedData/
+xcuserdata/
+.DS_Store
+*.xcuserstate
+build*/
+*.log
+logs/
+Backups/
+# Private: App Store submission docs, screenshots, discovery strategy. Never published.
+AppStoreSubmission/

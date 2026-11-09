@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066BFF149F2D15D4553624EB /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AB18C141F1278EE617C7B4 /* OnboardingView.swift */; };
+		0AA36085A06238FA6AC034E9 /* TimerActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA95A03C9E1A58915B01A0 /* TimerActivityAttributes.swift */; };
+		0B5D8B126B3DB04159F7B45A /* SignOffsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3082027ED9A01313D0A4FB4 /* SignOffsView.swift */; };
+		1DE4C0AFE588B6025CC61FCD /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1372F4AC7910A9F91AE50C19 /* GuideView.swift */; };
+		2790092C52104ED2A702FEAE /* TimerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA232A626B5B301D76273A13 /* TimerIntents.swift */; };
+		3BFE98489E0C42BE580E7571 /* XLSXWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A9B584B16ABFA5040CA64 /* XLSXWriter.swift */; };
+		3C318F16A108B610D4E8B4D3 /* ReminderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE04DC664A3CBDFE7BB8D17 /* ReminderManager.swift */; };
+		3E91958C57629AC0CEB45E6F /* RestoreFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A107E3FFD2AEAEE200C28CF /* RestoreFlow.swift */; };
+		3FE9BBCE295A6D4744C4EDE0 /* XLSXExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E7E56B8F658CE1BA3FF8CAF /* XLSXExporter.swift */; };
+		447C7C5F303574654C5376E8 /* Cause.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52884BB4CAE18DC480114F62 /* Cause.swift */; };
+		472D6ACDF2655F13AD2BB6D2 /* ReminderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD9497CFE17E7BA3DF31D4F /* ReminderSettingsView.swift */; };
+		4BF7351EA1FEB9AE1011CC8C /* Fmt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21900409DC54A9376A5CF6F8 /* Fmt.swift */; };
+		50961917B6F9E4BE904D228F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3A8A2EF90A888329D08EA /* SettingsView.swift */; };
+		55FBCC3F4847EEC91F4B0C37 /* HourlarkWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647EDEE72D19462A629CDDE /* HourlarkWidgetsBundle.swift */; };
+		5DFCECFDE719B7CA222870ED /* TimeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DF9494855735D6EB515F86 /* TimeEntry.swift */; };
+		5FE4440AA3C0A062B4B440D8 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = B909B3399821DF3E1677F1DB /* Components.swift */; };
+		6255E832926E349C43A98A11 /* CSVExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE1C47D59E114B5AEA4408A /* CSVExporter.swift */; };
+		6D653BB5A44280797D3174EA /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F2FB833893C925E6981D5 /* SharedStore.swift */; };
+		6FBF4AAD4603E1B5A60A473C /* HourlarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965E8065CA40CB32F99678C5 /* HourlarkTests.swift */; };
+		7108C0305B5762757D4B426B /* ExportSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BC98A7E51EF7D20C41EF56 /* ExportSupport.swift */; };
+		7F2BB489BB786CB37C61C1BE /* EntryEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69697D290B4E4A87D7227E7 /* EntryEditor.swift */; };
+		8D439B4355C8B31CBF28034A /* BackupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC409FD61E3A3B57F03725A /* BackupService.swift */; };
+		8DEC72E80120AB2BB596574D /* TimerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6C7FD7AE9CE82F2DDF172F /* TimerWidget.swift */; };
+		8DF03A47B11388A280AD395E /* TimerLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE790E8D45E621354766806 /* TimerLiveActivity.swift */; };
+		93EA85DDA67B2C33FCA4B265 /* Fmt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21900409DC54A9376A5CF6F8 /* Fmt.swift */; };
+		94284DCBA1AB5D5AF6D4E55D /* TrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89F7BE27F79B9EA294FB090 /* TrackView.swift */; };
+		9998900D62B0A3E5785FB015 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8026B6EC4351CC8313EA7B9 /* LogView.swift */; };
+		9FE9E4ED4D0C8ACF1A0886C9 /* PDFReports.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA261A5E2FEF16DEB04B57C9 /* PDFReports.swift */; };
+		A291716CB94E051CF95C3C7F /* SharedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3F2FB833893C925E6981D5 /* SharedStore.swift */; };
+		AAD4B2FB048191A01E265F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADEA0DCA851FD8723799E961 /* Assets.xcassets */; };
+		B54D8389BCAE4CC61FC15039 /* SignOffSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DBCB8B9DEC354F5396A37DB /* SignOffSheet.swift */; };
+		BB382A40D01A2CAF803F46AF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AD9CA7541AF6789E7E301211 /* PrivacyInfo.xcprivacy */; };
+		C026026D2103751767C76A88 /* HourlarkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4D9848A641B64551D2B2C0 /* HourlarkApp.swift */; };
+		C952B89213036B38373C8FB6 /* TimerActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA95A03C9E1A58915B01A0 /* TimerActivityAttributes.swift */; };
+		C9C70395917511B4E179B94D /* HourlarkWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CEA6EDF6594F2EB716E93A8C /* WidgetSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43671B16ED5C7D5F92CE5480 /* WidgetSync.swift */; };
+		DA91825D55AB66538EB6233E /* BackupSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A26487F8E2E88D2138688 /* BackupSettingsView.swift */; };
+		DCEC7195095B4AA899CDF5D6 /* CauseTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D12092201F957772332D4 /* CauseTemplate.swift */; };
+		E1C822C9F0D9A2502B121847 /* PDFComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41302F189C719959E7CCD9B /* PDFComposer.swift */; };
+		E6D94F2D33E7DF6BB6309AA1 /* TimerStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B51C520BD4AC72C4A09F0DE /* TimerStore.swift */; };
+		E8CBCF39A87B73DA7A3F7C8C /* ReportsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69927EA93AFA7C063CE163DF /* ReportsView.swift */; };
+		F16E346384AD5858A7A5DE64 /* TimerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA232A626B5B301D76273A13 /* TimerIntents.swift */; };
+		F472E27339C886096064D3BE /* BackupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49BF4D4221FF85FDC6CB9B /* BackupManager.swift */; };
+		F5696AED783F3F9DE7B3DBC9 /* CausesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485A7685E451F53F2B90E769 /* CausesView.swift */; };
+		F9243CC76163C473CD7DD276 /* DocumentScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D6BACA3A84EA607CE9A2FA /* DocumentScanner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0466F85DBB68801FF394F790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17F86C1939243731417E3FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2A5F1CE8ECBF0D34669491F;
+			remoteInfo = Hourlark;
+		};
+		0F08845562ADED801FDA5B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17F86C1939243731417E3FAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBF4AEB65AB68864823CF0AD;
+			remoteInfo = HourlarkWidgets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6777FAF776297201C1ADBC62 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C9C70395917511B4E179B94D /* HourlarkWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HourlarkWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1372F4AC7910A9F91AE50C19 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
+		189A9B584B16ABFA5040CA64 /* XLSXWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLSXWriter.swift; sourceTree = "<group>"; };
+		21900409DC54A9376A5CF6F8 /* Fmt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fmt.swift; sourceTree = "<group>"; };
+		377A26487F8E2E88D2138688 /* BackupSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSettingsView.swift; sourceTree = "<group>"; };
+		43671B16ED5C7D5F92CE5480 /* WidgetSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSync.swift; sourceTree = "<group>"; };
+		4734C9E91542F002DB7F53B6 /* Hourlark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Hourlark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		484ADF3E8EA520E25F9993CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		485A7685E451F53F2B90E769 /* CausesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CausesView.swift; sourceTree = "<group>"; };
+		4C3F2FB833893C925E6981D5 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
+		4DD944D2AE004E2505ADBC89 /* HourlarkTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = HourlarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52884BB4CAE18DC480114F62 /* Cause.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cause.swift; sourceTree = "<group>"; };
+		54DA95A03C9E1A58915B01A0 /* TimerActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerActivityAttributes.swift; sourceTree = "<group>"; };
+		58AB18C141F1278EE617C7B4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		5A4D9848A641B64551D2B2C0 /* HourlarkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlarkApp.swift; sourceTree = "<group>"; };
+		5E7E56B8F658CE1BA3FF8CAF /* XLSXExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLSXExporter.swift; sourceTree = "<group>"; };
+		5EE04DC664A3CBDFE7BB8D17 /* ReminderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderManager.swift; sourceTree = "<group>"; };
+		654FCCD6BE6AD50383B2A380 /* HourlarkWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HourlarkWidgets.entitlements; sourceTree = "<group>"; };
+		69927EA93AFA7C063CE163DF /* ReportsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsView.swift; sourceTree = "<group>"; };
+		6B51C520BD4AC72C4A09F0DE /* TimerStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerStore.swift; sourceTree = "<group>"; };
+		6E6C7FD7AE9CE82F2DDF172F /* TimerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerWidget.swift; sourceTree = "<group>"; };
+		70AE460B360C6425664DE0D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		7DBCB8B9DEC354F5396A37DB /* SignOffSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOffSheet.swift; sourceTree = "<group>"; };
+		8A107E3FFD2AEAEE200C28CF /* RestoreFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestoreFlow.swift; sourceTree = "<group>"; };
+		929EF5494BDCF25FF722DD6B /* Hourlark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hourlark.entitlements; sourceTree = "<group>"; };
+		965E8065CA40CB32F99678C5 /* HourlarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlarkTests.swift; sourceTree = "<group>"; };
+		A3082027ED9A01313D0A4FB4 /* SignOffsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOffsView.swift; sourceTree = "<group>"; };
+		A647EDEE72D19462A629CDDE /* HourlarkWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlarkWidgetsBundle.swift; sourceTree = "<group>"; };
+		A69697D290B4E4A87D7227E7 /* EntryEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEditor.swift; sourceTree = "<group>"; };
+		A7BC98A7E51EF7D20C41EF56 /* ExportSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSupport.swift; sourceTree = "<group>"; };
+		A89F7BE27F79B9EA294FB090 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
+		AAC409FD61E3A3B57F03725A /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupService.swift; sourceTree = "<group>"; };
+		AD9CA7541AF6789E7E301211 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		ADEA0DCA851FD8723799E961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B909B3399821DF3E1677F1DB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		C1D6BACA3A84EA607CE9A2FA /* DocumentScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScanner.swift; sourceTree = "<group>"; };
+		C3F3A8A2EF90A888329D08EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CA232A626B5B301D76273A13 /* TimerIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerIntents.swift; sourceTree = "<group>"; };
+		CA261A5E2FEF16DEB04B57C9 /* PDFReports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReports.swift; sourceTree = "<group>"; };
+		CBE790E8D45E621354766806 /* TimerLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerLiveActivity.swift; sourceTree = "<group>"; };
+		D3DF9494855735D6EB515F86 /* TimeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeEntry.swift; sourceTree = "<group>"; };
+		D41302F189C719959E7CCD9B /* PDFComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFComposer.swift; sourceTree = "<group>"; };
+		DA49BF4D4221FF85FDC6CB9B /* BackupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager.swift; sourceTree = "<group>"; };
+		E68D12092201F957772332D4 /* CauseTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CauseTemplate.swift; sourceTree = "<group>"; };
+		E8026B6EC4351CC8313EA7B9 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		FAD9497CFE17E7BA3DF31D4F /* ReminderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSettingsView.swift; sourceTree = "<group>"; };
+		FFE1C47D59E114B5AEA4408A /* CSVExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVExporter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		04841FD9930E1311BBE16CEE /* Hourlark */ = {
+			isa = PBXGroup;
+			children = (
+				929EF5494BDCF25FF722DD6B /* Hourlark.entitlements */,
+				484ADF3E8EA520E25F9993CE /* Info.plist */,
+				E3F501DAD4FEEAE0CCC2F999 /* App */,
+				A7B90437C8C82AADFB084076 /* Models */,
+				6D018544D8F833024227D081 /* Resources */,
+				FF8DA65E68A6EC27CBAE7602 /* Services */,
+				B87F4325A1990C272BE33067 /* Views */,
+			);
+			path = Hourlark;
+			sourceTree = "<group>";
+		};
+		404FAF3D38AE18AC48B453F0 = {
+			isa = PBXGroup;
+			children = (
+				04841FD9930E1311BBE16CEE /* Hourlark */,
+				9C8369FB56D0166CFC67EE3D /* HourlarkTests */,
+				E7B4BCC535CA424411E3E018 /* HourlarkWidgets */,
+				F7452E42F8D7B9BC99BAA192 /* Shared */,
+				88132EF87AAF0B2813071615 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6D018544D8F833024227D081 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADEA0DCA851FD8723799E961 /* Assets.xcassets */,
+				AD9CA7541AF6789E7E301211 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		88132EF87AAF0B2813071615 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4734C9E91542F002DB7F53B6 /* Hourlark.app */,
+				4DD944D2AE004E2505ADBC89 /* HourlarkTests.xctest */,
+				0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C8369FB56D0166CFC67EE3D /* HourlarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				965E8065CA40CB32F99678C5 /* HourlarkTests.swift */,
+			);
+			path = HourlarkTests;
+			sourceTree = "<group>";
+		};
+		A7B90437C8C82AADFB084076 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				52884BB4CAE18DC480114F62 /* Cause.swift */,
+				E68D12092201F957772332D4 /* CauseTemplate.swift */,
+				7DBCB8B9DEC354F5396A37DB /* SignOffSheet.swift */,
+				D3DF9494855735D6EB515F86 /* TimeEntry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B87F4325A1990C272BE33067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				377A26487F8E2E88D2138688 /* BackupSettingsView.swift */,
+				485A7685E451F53F2B90E769 /* CausesView.swift */,
+				B909B3399821DF3E1677F1DB /* Components.swift */,
+				C1D6BACA3A84EA607CE9A2FA /* DocumentScanner.swift */,
+				A69697D290B4E4A87D7227E7 /* EntryEditor.swift */,
+				1372F4AC7910A9F91AE50C19 /* GuideView.swift */,
+				E8026B6EC4351CC8313EA7B9 /* LogView.swift */,
+				58AB18C141F1278EE617C7B4 /* OnboardingView.swift */,
+				FAD9497CFE17E7BA3DF31D4F /* ReminderSettingsView.swift */,
+				69927EA93AFA7C063CE163DF /* ReportsView.swift */,
+				8A107E3FFD2AEAEE200C28CF /* RestoreFlow.swift */,
+				C3F3A8A2EF90A888329D08EA /* SettingsView.swift */,
+				A3082027ED9A01313D0A4FB4 /* SignOffsView.swift */,
+				A89F7BE27F79B9EA294FB090 /* TrackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3F501DAD4FEEAE0CCC2F999 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5A4D9848A641B64551D2B2C0 /* HourlarkApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E7B4BCC535CA424411E3E018 /* HourlarkWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				654FCCD6BE6AD50383B2A380 /* HourlarkWidgets.entitlements */,
+				A647EDEE72D19462A629CDDE /* HourlarkWidgetsBundle.swift */,
+				70AE460B360C6425664DE0D7 /* Info.plist */,
+				CBE790E8D45E621354766806 /* TimerLiveActivity.swift */,
+				6E6C7FD7AE9CE82F2DDF172F /* TimerWidget.swift */,
+			);
+			path = HourlarkWidgets;
+			sourceTree = "<group>";
+		};
+		F7452E42F8D7B9BC99BAA192 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				21900409DC54A9376A5CF6F8 /* Fmt.swift */,
+				4C3F2FB833893C925E6981D5 /* SharedStore.swift */,
+				54DA95A03C9E1A58915B01A0 /* TimerActivityAttributes.swift */,
+				CA232A626B5B301D76273A13 /* TimerIntents.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		FF8DA65E68A6EC27CBAE7602 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA49BF4D4221FF85FDC6CB9B /* BackupManager.swift */,
+				AAC409FD61E3A3B57F03725A /* BackupService.swift */,
+				FFE1C47D59E114B5AEA4408A /* CSVExporter.swift */,
+				A7BC98A7E51EF7D20C41EF56 /* ExportSupport.swift */,
+				D41302F189C719959E7CCD9B /* PDFComposer.swift */,
+				CA261A5E2FEF16DEB04B57C9 /* PDFReports.swift */,
+				5EE04DC664A3CBDFE7BB8D17 /* ReminderManager.swift */,
+				6B51C520BD4AC72C4A09F0DE /* TimerStore.swift */,
+				43671B16ED5C7D5F92CE5480 /* WidgetSync.swift */,
+				5E7E56B8F658CE1BA3FF8CAF /* XLSXExporter.swift */,
+				189A9B584B16ABFA5040CA64 /* XLSXWriter.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BE96AEFA544D19ED355DC76 /* HourlarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61B019F0646973E14A99CA21 /* Build configuration list for PBXNativeTarget "HourlarkTests" */;
+			buildPhases = (
+				BE59B53D75D531A02058E4E6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F05B56107612F83F891ADE30 /* PBXTargetDependency */,
+			);
+			name = HourlarkTests;
+			packageProductDependencies = (
+			);
+			productName = HourlarkTests;
+			productReference = 4DD944D2AE004E2505ADBC89 /* HourlarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BBF4AEB65AB68864823CF0AD /* HourlarkWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79661F784D2055286810CDAE /* Build configuration list for PBXNativeTarget "HourlarkWidgets" */;
+			buildPhases = (
+				F8AA405192184193BDCD7EAF /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HourlarkWidgets;
+			packageProductDependencies = (
+			);
+			productName = HourlarkWidgets;
+			productReference = 0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F2A5F1CE8ECBF0D34669491F /* Hourlark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDD256981F929A5030A3CFF3 /* Build configuration list for PBXNativeTarget "Hourlark" */;
+			buildPhases = (
+				B97BC2FEA781440537120B29 /* Sources */,
+				72D8AFCC5DE496F549E5C222 /* Resources */,
+				6777FAF776297201C1ADBC62 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B143CE7BEC22B97A4433740F /* PBXTargetDependency */,
+			);
+			name = Hourlark;
+			packageProductDependencies = (
+			);
+			productName = Hourlark;
+			productReference = 4734C9E91542F002DB7F53B6 /* Hourlark.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17F86C1939243731417E3FAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6BE96AEFA544D19ED355DC76 = {
+						ProvisioningStyle = Automatic;
+					};
+					BBF4AEB65AB68864823CF0AD = {
+						ProvisioningStyle = Automatic;
+					};
+					F2A5F1CE8ECBF0D34669491F = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1F97AB59AACAC3423E142BF6 /* Build configuration list for PBXProject "Hourlark" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 404FAF3D38AE18AC48B453F0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 88132EF87AAF0B2813071615 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F2A5F1CE8ECBF0D34669491F /* Hourlark */,
+				BBF4AEB65AB68864823CF0AD /* HourlarkWidgets */,
+				6BE96AEFA544D19ED355DC76 /* HourlarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72D8AFCC5DE496F549E5C222 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD4B2FB048191A01E265F35 /* Assets.xcassets in Resources */,
+				BB382A40D01A2CAF803F46AF /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B97BC2FEA781440537120B29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F472E27339C886096064D3BE /* BackupManager.swift in Sources */,
+				8D439B4355C8B31CBF28034A /* BackupService.swift in Sources */,
+				DA91825D55AB66538EB6233E /* BackupSettingsView.swift in Sources */,
+				6255E832926E349C43A98A11 /* CSVExporter.swift in Sources */,
+				447C7C5F303574654C5376E8 /* Cause.swift in Sources */,
+				DCEC7195095B4AA899CDF5D6 /* CauseTemplate.swift in Sources */,
+				F5696AED783F3F9DE7B3DBC9 /* CausesView.swift in Sources */,
+				5FE4440AA3C0A062B4B440D8 /* Components.swift in Sources */,
+				F9243CC76163C473CD7DD276 /* DocumentScanner.swift in Sources */,
+				7F2BB489BB786CB37C61C1BE /* EntryEditor.swift in Sources */,
+				7108C0305B5762757D4B426B /* ExportSupport.swift in Sources */,
+				93EA85DDA67B2C33FCA4B265 /* Fmt.swift in Sources */,
+				1DE4C0AFE588B6025CC61FCD /* GuideView.swift in Sources */,
+				C026026D2103751767C76A88 /* HourlarkApp.swift in Sources */,
+				9998900D62B0A3E5785FB015 /* LogView.swift in Sources */,
+				066BFF149F2D15D4553624EB /* OnboardingView.swift in Sources */,
+				E1C822C9F0D9A2502B121847 /* PDFComposer.swift in Sources */,
+				9FE9E4ED4D0C8ACF1A0886C9 /* PDFReports.swift in Sources */,
+				3C318F16A108B610D4E8B4D3 /* ReminderManager.swift in Sources */,
+				472D6ACDF2655F13AD2BB6D2 /* ReminderSettingsView.swift in Sources */,
+				E8CBCF39A87B73DA7A3F7C8C /* ReportsView.swift in Sources */,
+				3E91958C57629AC0CEB45E6F /* RestoreFlow.swift in Sources */,
+				50961917B6F9E4BE904D228F /* SettingsView.swift in Sources */,
+				6D653BB5A44280797D3174EA /* SharedStore.swift in Sources */,
+				B54D8389BCAE4CC61FC15039 /* SignOffSheet.swift in Sources */,
+				0B5D8B126B3DB04159F7B45A /* SignOffsView.swift in Sources */,
+				5DFCECFDE719B7CA222870ED /* TimeEntry.swift in Sources */,
+				C952B89213036B38373C8FB6 /* TimerActivityAttributes.swift in Sources */,
+				F16E346384AD5858A7A5DE64 /* TimerIntents.swift in Sources */,
+				E6D94F2D33E7DF6BB6309AA1 /* TimerStore.swift in Sources */,
+				94284DCBA1AB5D5AF6D4E55D /* TrackView.swift in Sources */,
+				CEA6EDF6594F2EB716E93A8C /* WidgetSync.swift in Sources */,
+				3FE9BBCE295A6D4744C4EDE0 /* XLSXExporter.swift in Sources */,
+				3BFE98489E0C42BE580E7571 /* XLSXWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE59B53D75D531A02058E4E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FBF4AAD4603E1B5A60A473C /* HourlarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8AA405192184193BDCD7EAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BF7351EA1FEB9AE1011CC8C /* Fmt.swift in Sources */,
+				55FBCC3F4847EEC91F4B0C37 /* HourlarkWidgetsBundle.swift in Sources */,
+				A291716CB94E051CF95C3C7F /* SharedStore.swift in Sources */,
+				0AA36085A06238FA6AC034E9 /* TimerActivityAttributes.swift in Sources */,
+				2790092C52104ED2A702FEAE /* TimerIntents.swift in Sources */,
+				8DF03A47B11388A280AD395E /* TimerLiveActivity.swift in Sources */,
+				8DEC72E80120AB2BB596574D /* TimerWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B143CE7BEC22B97A4433740F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBF4AEB65AB68864823CF0AD /* HourlarkWidgets */;
+			targetProxy = 0F08845562ADED801FDA5B46 /* PBXContainerItemProxy */;
+		};
+		F05B56107612F83F891ADE30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F2A5F1CE8ECBF0D34669491F /* Hourlark */;
+			targetProxy = 0466F85DBB68801FF394F790 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04838DA306DF7BD5BBC3C9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.3.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5259F9542CA7382A84CF26D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hourlark.app/Hourlark";
+			};
+			name = Release;
+		};
+		65F37663879A17887EB5A474 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 3;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.3.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8A6977A76FF5DF50547B3D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HourlarkWidgets/HourlarkWidgets.entitlements;
+				INFOPLIST_FILE = HourlarkWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9B9C50F5C7DC66D39F1FD656 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hourlark.app/Hourlark";
+			};
+			name = Debug;
+		};
+		C07C466714141CF1C16971B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = HourlarkWidgets/HourlarkWidgets.entitlements;
+				INFOPLIST_FILE = HourlarkWidgets/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C34EFD25170DB64F5F1E2E1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hourlark/Hourlark.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Hourlark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E0D01F1990D0C9365BC6B79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hourlark/Hourlark.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Hourlark/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ryanhamilton.hourlark;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F97AB59AACAC3423E142BF6 /* Build configuration list for PBXProject "Hourlark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04838DA306DF7BD5BBC3C9B9 /* Debug */,
+				65F37663879A17887EB5A474 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61B019F0646973E14A99CA21 /* Build configuration list for PBXNativeTarget "HourlarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9C50F5C7DC66D39F1FD656 /* Debug */,
+				5259F9542CA7382A84CF26D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		79661F784D2055286810CDAE /* Build configuration list for PBXNativeTarget "HourlarkWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C07C466714141CF1C16971B6 /* Debug */,
+				8A6977A76FF5DF50547B3D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDD256981F929A5030A3CFF3 /* Build configuration list for PBXNativeTarget "Hourlark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0D01F1990D0C9365BC6B79E /* Debug */,
+				C34EFD25170DB64F5F1E2E1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17F86C1939243731417E3FAB /* Project object */;
+}
