@@ -87,14 +87,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = HourlarkWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F941084F5B97880B7CF4D61 /* HourlarkWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HourlarkWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		1372F4AC7910A9F91AE50C19 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 		189A9B584B16ABFA5040CA64 /* XLSXWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLSXWriter.swift; sourceTree = "<group>"; };
-		2146FEF204D03A48B3B1244F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		2146FEF204D03A48B3B1244F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		21900409DC54A9376A5CF6F8 /* Fmt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fmt.swift; sourceTree = "<group>"; };
 		377A26487F8E2E88D2138688 /* BackupSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupSettingsView.swift; sourceTree = "<group>"; };
 		43671B16ED5C7D5F92CE5480 /* WidgetSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetSync.swift; sourceTree = "<group>"; };
-		4734C9E91542F002DB7F53B6 /* Hourlark.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Hourlark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4734C9E91542F002DB7F53B6 /* Hourlark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hourlark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		484ADF3E8EA520E25F9993CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		485A7685E451F53F2B90E769 /* CausesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CausesView.swift; sourceTree = "<group>"; };
 		4C3F2FB833893C925E6981D5 /* SharedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStore.swift; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		A7BC98A7E51EF7D20C41EF56 /* ExportSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSupport.swift; sourceTree = "<group>"; };
 		A89F7BE27F79B9EA294FB090 /* TrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackView.swift; sourceTree = "<group>"; };
 		AAC409FD61E3A3B57F03725A /* BackupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupService.swift; sourceTree = "<group>"; };
-		AD9CA7541AF6789E7E301211 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AD9CA7541AF6789E7E301211 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ADEA0DCA851FD8723799E961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B909B3399821DF3E1677F1DB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		C1D6BACA3A84EA607CE9A2FA /* DocumentScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScanner.swift; sourceTree = "<group>"; };
@@ -618,6 +618,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HourlarkWidgets/HourlarkWidgets.entitlements;
+				DEVELOPMENT_TEAM = 38H53T49NJ;
 				INFOPLIST_FILE = HourlarkWidgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = HourlarkWidgets/HourlarkWidgets.entitlements;
+				DEVELOPMENT_TEAM = 38H53T49NJ;
 				INFOPLIST_FILE = HourlarkWidgets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -672,6 +674,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Hourlark/Hourlark.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 38H53T49NJ;
 				INFOPLIST_FILE = Hourlark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -690,6 +693,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Hourlark/Hourlark.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 38H53T49NJ;
 				INFOPLIST_FILE = Hourlark/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

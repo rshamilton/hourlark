@@ -37,6 +37,11 @@ struct LogView: View {
                                            systemImage: "clock",
                                            description: Text("Start the timer on the Track tab, or tap + to add time you already did."))
                 } else {
+                    VStack(spacing: 0) {
+                    if causes.filter({ !$0.archived }).count > 1 {
+                        CauseChipBar(causes: causes.filter { !$0.archived }, selection: $filterCauseID, allowsAll: true)
+                            .padding(.vertical, 8)
+                    }
                     List {
                         if filtered.isEmpty {
                             ContentUnavailableView(search.isEmpty ? "No entries for this cause" : "No matches",
@@ -67,17 +72,11 @@ struct LogView: View {
                             }
                         }
                     }
+                    }
                     .searchable(text: $search, prompt: "Search notes or causes")
                 }
             }
             .navigationTitle("Log")
-            .safeAreaInset(edge: .top, spacing: 0) {
-                if !entries.isEmpty && causes.count > 1 {
-                    CauseChipBar(causes: causes.filter { !$0.archived }, selection: $filterCauseID, allowsAll: true)
-                        .padding(.vertical, 8)
-                        .background(.bar)
-                }
-            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button { showNew = true } label: { Image(systemName: "plus") }
