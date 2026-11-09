@@ -56,34 +56,35 @@ struct SignOffsView: View {
 struct SheetRow: View {
     let sheet: SignOffSheet
 
-    /// A single day shows once ("Nov 9, 2026"), not as "Nov 9, 2026 – Nov 9, 2026".
+    /// "Nov 9, 2026" for one day, "Oct 15 – Oct 24, 2026" within a year, full dates across years.
     private var rangeText: String {
         let cal = Calendar.current
         if cal.isDate(sheet.rangeStart, inSameDayAs: sheet.rangeEnd) { return Fmt.date(sheet.rangeStart) }
+        if cal.component(.year, from: sheet.rangeStart) == cal.component(.year, from: sheet.rangeEnd) {
+            let start = sheet.rangeStart.formatted(.dateTime.month(.abbreviated).day())
+            return "\(start) – \(Fmt.date(sheet.rangeEnd))"
+        }
         return "\(Fmt.date(sheet.rangeStart)) – \(Fmt.date(sheet.rangeEnd))"
     }
 
     var body: some View {
         HStack(spacing: 12) {
             CauseBadge(symbol: sheet.cause?.symbol ?? "questionmark", tint: sheet.cause?.tint ?? .gray, size: 36)
-            VStack(alignment: .leading, spacing: 2) {
-                Text(sheet.cause?.name ?? "Unknown cause").font(.headline)
+            VStack(alignment: .leading, spacing: 3) {
+                Text(sheet.cause?.name ?? "Unknown cause").font(.headline).lineLimit(2)
                 Text(rangeText)
                     .font(.subheadline).foregroundStyle(.secondary)
-                    .lineLimit(2)
-            }
-            .layoutPriority(0)
-            Spacer(minLength: 8)
-            VStack(alignment: .trailing, spacing: 2) {
-                Text(Fmt.hm(sheet.totalSeconds)).font(.headline).monospacedDigit()
-                    .fixedSize(horizontal: true, vertical: false)
-                HStack(spacing: 6) {
+                    .lineLimit(1).minimumScaleFactor(0.85)
+                HStack(spacing: 8) {
+                    StatusBadge(status: sheet.isSigned ? .signed : .awaitingSignature)
                     if !sheet.proofs.isEmpty {
                         Label("\(sheet.proofs.count)", systemImage: "photo").font(.caption2).foregroundStyle(.secondary)
                     }
-                    StatusBadge(status: sheet.isSigned ? .signed : .awaitingSignature)
                 }
             }
+            Spacer(minLength: 8)
+            Text(Fmt.hm(sheet.totalSeconds)).font(.headline).monospacedDigit()
+                .fixedSize(horizontal: true, vertical: false)
         }
     }
 }
