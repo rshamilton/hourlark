@@ -56,17 +56,27 @@ struct SignOffsView: View {
 struct SheetRow: View {
     let sheet: SignOffSheet
 
+    /// A single day shows once ("Nov 9, 2026"), not as "Nov 9, 2026 – Nov 9, 2026".
+    private var rangeText: String {
+        let cal = Calendar.current
+        if cal.isDate(sheet.rangeStart, inSameDayAs: sheet.rangeEnd) { return Fmt.date(sheet.rangeStart) }
+        return "\(Fmt.date(sheet.rangeStart)) – \(Fmt.date(sheet.rangeEnd))"
+    }
+
     var body: some View {
         HStack(spacing: 12) {
             CauseBadge(symbol: sheet.cause?.symbol ?? "questionmark", tint: sheet.cause?.tint ?? .gray, size: 36)
             VStack(alignment: .leading, spacing: 2) {
                 Text(sheet.cause?.name ?? "Unknown cause").font(.headline)
-                Text("\(Fmt.date(sheet.rangeStart)) – \(Fmt.date(sheet.rangeEnd))")
+                Text(rangeText)
                     .font(.subheadline).foregroundStyle(.secondary)
+                    .lineLimit(2)
             }
-            Spacer()
+            .layoutPriority(0)
+            Spacer(minLength: 8)
             VStack(alignment: .trailing, spacing: 2) {
                 Text(Fmt.hm(sheet.totalSeconds)).font(.headline).monospacedDigit()
+                    .fixedSize(horizontal: true, vertical: false)
                 HStack(spacing: 6) {
                     if !sheet.proofs.isEmpty {
                         Label("\(sheet.proofs.count)", systemImage: "photo").font(.caption2).foregroundStyle(.secondary)

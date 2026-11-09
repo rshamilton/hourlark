@@ -105,6 +105,9 @@ struct StatusBadge: View {
             .font(.caption2.weight(.semibold))
             .foregroundStyle(status.color)
             .labelStyle(.titleAndIcon)
+            .lineLimit(1)
+            // Never break a status like "Signed" mid-word; neighbouring text yields instead.
+            .fixedSize(horizontal: true, vertical: false)
     }
 }
 
