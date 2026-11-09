@@ -4,7 +4,7 @@
 
 **Free, no account, works offline, no ads. Unlimited causes, entries and exports (CSV, Excel, PDF).**
 
-Website and privacy policy: https://rshamilton.github.io/hourlark/
+Website: https://rshamilton.github.io/hourlark/ · Support: https://rshamilton.github.io/hourlark/support.html · Privacy policy: https://rshamilton.github.io/hourlark/privacy.html
 
 ## Feature checklist
 
